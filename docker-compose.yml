@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: lamadriguera_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: lamadriguera_user
+      POSTGRES_PASSWORD: lamadriguera_password
+      POSTGRES_DB: lamadriguera_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - lamadriguera_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  lamadriguera_postgres_data:

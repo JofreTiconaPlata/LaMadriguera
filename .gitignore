@@ -1,0 +1,43 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+build/
+coverage/
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+apps/mobile/build/
+
+# Android / iOS
+apps/mobile/android/local.properties
+apps/mobile/ios/Pods/
+apps/mobile/ios/.symlinks/
+
+# IDE
+.vscode/
+.idea/
+
+# Database backups
+database/backups/*
+!database/backups/.gitkeep
+
+# Docker
+*.pid
